@@ -9,7 +9,7 @@ package:
 	helm package chart/nginx
 
 version:
-	echo $(CHART_VERSION) > chart_version
+	echo $(CHART_VERSION) > values/chart_version
 
 push:
 	helm push chart/nginx tcg
