@@ -6,13 +6,15 @@ APP_VERSION ?= $(shell yq eval '.appVersion' chart/nginx/Chart.yaml)
 SPINNAKER_API ?= https://spinnaker.tcg.services.cerise.media/gate
 
 package:
-	helm package chart/nginx
+	helm package chart/nginx -d chart/.packages
 
 version:
 	echo $(CHART_VERSION) > values/chart_version
 
 push:
-	helm push chart/nginx tcg
+	# helm push chart/nginx hope3r
+	cr upload --config cr.yaml --skip-existing
+	helm index
 
 triggerchart:
 	curl -L -X POST \

@@ -1,4 +1,4 @@
 apiVersion: v2
 description: Hope3r nginx
 name: nginx
-version: 0.1.4
+version: 0.1.12

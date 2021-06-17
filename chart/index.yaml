@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  nginx:
+  - apiVersion: v2
+    created: "2021-06-17T12:12:37.54343+02:00"
+    description: Hope3r nginx
+    digest: 4c5ddcb6dd62711333f281a49596ab81c1ea1f715f666884181a29c787195ecd
+    name: nginx
+    urls:
+    - .packages/nginx-0.1.12.tgz
+    version: 0.1.12
+generated: "2021-06-17T12:12:37.542919+02:00"
